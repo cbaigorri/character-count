@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Character Count Example</title>
+  <meta name="description" content="">
+</head>
+<body>
+  <textarea class="count-me" data-max-chars="10" data-counter-display="#counter"></textarea>
+  <span><span id="counter"></span> characters left</span>
+
+  <textarea class="count-me" data-max-chars="100" data-counter-display="#counter2"></textarea>
+  <span><span id="counter2"></span> characters left</span>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/lib/jquery.min.js"><\/script>')</script>
+  <script src="js/jquery.charactercount.js"></script>
+  
+  <script>
+    $(function(){
+      
+      $('.count-me').characterCount();
+      
+    });
+  </script>
+  
+</body>
+</html>
